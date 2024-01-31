@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="style.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <h1>Books-Wikipedia </h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Harry Potter and the Philosopher's Stone</h2>
+            <h3>J.K.Rowling</h3>
+            <p> The first novel in the Harry Potter series and Rowling's debut novel, it follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday, when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry</p>
+            <button onclick="deletebook(event)">delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay">
+
+    </div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short Desrciption" id="book-des-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+
+
+    <button class="add-button" id="add-popup-button">+</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
